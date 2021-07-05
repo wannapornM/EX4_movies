@@ -1,0 +1,63 @@
+body {
+    background: #f0f0f0;
+    font-family: 'Jost', sans-serif;
+}
+
+.moviesCategory {
+    display: grid;
+    grid-template-columns: repeat(5, 200px);
+    grid-column-gap: 45px;
+    grid-row-gap: 30px;
+    justify-content: center;
+    margin: 100px 50px auto;
+}
+.movie {
+    max-width: auto;
+    height: 500px;
+    background: white;
+    border-radius: 15px;
+    text-align: center;
+    padding: auto 5px auto;
+}
+.movie-poster {
+    width: 200px;
+    height: 300px;
+    border-radius: 5px;
+    display: block;
+    cursor: pointer;
+}
+.movie-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #1d1b1b;
+
+    &:hover {
+        cursor: pointer;
+        text-decoration: underline;
+        color: #241e85;
+    }
+}
+.icon-score {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 15px;
+}
+.icon-rate {
+    width: 25px;
+    height: auto;
+    margin-right: 8px;
+}
+.percent-rate {
+    font-size: 16px;
+    font-weight: 500;
+    color: #383737;
+}
+.release-date {
+    font-size: 16px;
+    padding-top: 10px;
+    color: #8a8282;
+}
